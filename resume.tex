@@ -1,0 +1,183 @@
+%-------------------------
+% Data Engineer Resume - LaTeX
+% Inspired by "Jake's Resume"
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Rene Gueye} \\ \vspace{3pt}
+    \textbf{ \Large \scshape Data Engineer} \\ \vspace{3pt}
+    \small
+    Raleigh--Durham--Chapel Hill, NC $|$ Open to relocation $|$ Authorized to Work in the U.S. $|$
+    \href{tel:+19843797264}{+1 984-379-7264} $|$
+    \href{mailto:rene.pierre.gueye1@gmail.com}{rene.pierre.gueye1@gmail.com} $|$
+    \href{https://linkedin.com/}{linkedin.com} $|$
+    \href{https://github.com/rpigueye}{github.com/rpigueye}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{Data Engineer with 4+ years of experience designing and operating large-scale ETL/ELT pipelines, cloud-native architectures, and ML-enablement platforms on Microsoft Azure and Databricks. Skilled in Python, PySpark, SQL, Delta Lake, Unity Catalog, and MLOps workflows (MLflow), with a track record of improving forecast model performance by 30\%, increasing the forecasting perimeter, and maintaining 90\%+ pipeline success rates across 20+ production pipelines processing from 500GB to multiple terabytes of data weekly. Strong background in Power BI development and training, data quality automation (Great Expectations), agile delivery, and cross-functional collaboration with data science teams and stakeholders.}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Cloud \& Platforms}{: Azure Databricks, Azure Data Factory, Azure Storage Gen2, Azure Architecture \& Governance (Subscriptions, Resource Group, Azure Key Vault), Azure DevOps} \\
+     \textbf{Languages}{: Python, SQL, PySpark, Scala, C, DAX, M} \\
+     \textbf{Data Engineering}{: Apache Spark, Delta Lake, ETL/ELT pipeline design, Great Expectations (data quality)} \\
+     \textbf{BI \& Automation}{: Power BI, Power Apps, Power Automate, Logic App, Zoho Analytics} \\
+     \textbf{ML / Data Science}{: MLflow, XGBoost, decision trees, model monitoring \& deployment} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, Oracle} \\
+     \textbf{Methods \& Tools}{: Agile/Scrum, Git, Jira, Miro, Docker}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Engineer}{2021 -- 2025}
+      {Michelin Tires (via CGI)}{Clermont-Ferrand, France}  
+
+
+\vspace{9pt}
+     \small{\textit{Supply Chain context: Built the end-to-end data \& ML platform powering tire production forecasting --- predicting optimal production volumes to prevent warehouse stockouts and avoid overproduction across manufacturing plants.}}
+      \resumeItemListStart
+        \resumeItem{Designed, built, and maintained 20+ production ETL/ELT pipelines in Azure Data Factory, integrating heterogeneous sources (Oracle, Azure Storage Gen2, ERP systems) and processing data volumes ranging from 500GB to multiple terabytes on a daily/weekly basis to feed supply chain forecasting.}
+        \resumeItem{Engineered ML features for demand forecasting models predicting ideal tire production volumes per warehouse, enabling the supply chain team to balance stock levels and avoid both shortages and excess inventory.}
+        \resumeItem{Partnered with the data science team to engineer predictive-model features and built a Databricks/MLflow comparison dashboard to select and promote the best-performing models to production, contributing to a 30\% improvement in model accuracy.}
+        \resumeItem{Owned the production release cycle for models and features (new release every 2 months), operating and monitoring 6+ models running in production weekly; doubled the forecasting scope by consistently delivering validated models on schedule.}
+        \resumeItem{Tracked and monitored model performance over time, ensuring forecast drift was detected early and models were retrained before impacting supply chain decisions.}
+        \resumeItem{Orchestrated end-to-end pipeline execution in Azure Data Factory, coordinating Databricks notebook runs and automated data-quality tests (Great Expectations), sustaining a 90\% pipeline success rate with rapid failure detection.}  \vspace{-11pt}
+        \resumeItem{Built a Power BI monitoring tool for real-time pipeline tracking, enabling the team to identify and respond to failures immediately.}
+        \resumeItem{Designed and managed multiple Delta Lake tables governed through Unity Catalog.}
+        \resumeItem{Trained 100+ colleagues on Power BI, data modeling best practices, and effective data storytelling.}
+        \resumeItem{Developed internal tooling to track data quality (Great Expectations) and streamline system migrations.}
+        \resumeItem{Worked in Agile Scrum using Azure DevOps, Git, and Jira --- delivering production-ready features in 3-week sprints within a cross-functional data \& supply chain team.} \vspace{3pt}
+      \resumeItemListEnd
+
+\newpage
+
+ \vspace{7pt}
+    \resumeSubheading
+      {Business Intelligence Intern}{2021 (5 months)}
+      {Cells \& Co BioServices}{Clermont-Ferrand, France} 
+       \vspace{2pt}
+      \resumeItemListStart
+        \resumeItem{Led the migration of BI reporting from Power BI to Zoho Analytics, re-architecting 10+ reports and 15+ tables with complex underlying queries.}
+        \resumeItem{Built new cross-table analytical reports in Zoho Analytics by combining multiple data sources.}
+        \resumeItem{Developed a bonus alerting tool to flag unused BI tools and tables, improving governance and resource efficiency.}
+        \resumeItem{Delivered all migration objectives within the internship timeline.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+ \vspace{-4pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Clermont Auvergne (UCA)}{2022}
+      {Master's Degree in Computer Science (Data Engineering)}{Clermont-Ferrand, France} 
+\vspace{7pt}
+    \resumeSubheading
+      {University of Clermont Auvergne (UCA)}{2020}
+      {Bachelor's Degree in Computer Science}{Clermont-Ferrand, France}
+  \resumeSubHeadingListEnd
+
+ \vspace{-2pt}
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Databricks Certified Data Engineer Professional --- \textit{In progress}}
+ \vspace{7pt}
+    \resumeSubItem{Databricks Certified Data Engineer Associate --- \textit{July 2025}}
+  \resumeSubHeadingListEnd
+
+\end{document}

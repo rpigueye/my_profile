@@ -19,7 +19,8 @@ Data Engineer for 4+ years, most recently owning 20+ production ETL/ELT pipeline
 ### 2. Silver — what I refine it with
  
 ```
-Cloud & Orchestration   Azure Databricks · Azure Data Factory · Azure Storage Gen2 · Azure Architecture & Governance (Subscriptions, Resource Group, Azure Key Vault) · Azure DevOps
+Cloud & Orchestration   Azure Databricks · Azure Data Factory · Azure Storage Gen2 ·
+                        Azure Architecture & Governance (Subscriptions, Resource Group, Azure Key Vault) · Azure DevOps
 Languages               Python · SQL · PySpark · Scala · C · DAX · M
 Data Engineering        Apache Spark · Delta Lake · Unity Catalog · ETL/ELT design · Great Expectations
 ML / MLOps              MLflow · XGBoost · model monitoring & deployment

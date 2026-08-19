@@ -47,9 +47,6 @@ Methods & Tools         Agile/Scrum · Git · Jira · Miro · Docker
 * Machine Learning lifecycle on Databricks
 
 ---
-Reach me at **rene.pierre.gueye1@gmail.com** or on [LinkedIn](https://linkedin.com/in/).
-
----
 I'm interested in Data Engineer, Azure Data Engineer and Databricks Data Engineer opportunities.
 
 Feel free to explore my repositories to see examples of my Data Engineering work.

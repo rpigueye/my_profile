@@ -8,7 +8,7 @@ Raleigh–Durham-Chapel Hill, NC · Open to relocation · Authorized to work in 
 [![Databricks](https://img.shields.io/badge/Databricks-Certified_Associate-FF3621?style=flat-square&logo=databricks&logoColor=white)](#)
  
 </div>
----
+
  
 I build data pipelines the way a medallion architecture is supposed to work: raw signal in, something trustworthy out. Almost five years turning messy operational data into models and dashboards people actually rely on.
  
